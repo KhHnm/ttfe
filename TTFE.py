@@ -9,7 +9,7 @@ class TTFE:
         self.init_max_num = init_max_num
         self.max_fallen_num = init_max_num-1 
         self.point = 0
-    
+        
     def initialize_board(self):
         tmp_board_state = None
         while(True):
@@ -24,6 +24,9 @@ class TTFE:
         self.touched_state = []
 
     def check_continuable(self,is_search=False):
+        return True
+    def check_touchable(self, touched_coord):
+        if self.
         return True
 
     def calc_point(self):
@@ -72,8 +75,7 @@ class TTFE:
         
         return self.board_state, self.touched_state, touchable_flag, continuable_flag,self.point
     
-    def check_touchable(self, touched_coord):
-        return True
+
 
 
 def main():
